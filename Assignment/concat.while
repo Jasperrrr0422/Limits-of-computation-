@@ -1,0 +1,12 @@
+(*
+    Candidate Number: 263107
+*)
+concat read XY{
+    X:= <reverse> hd XY;
+    Y:= hd tl XY;
+    while X{
+        Y:= cons hd X Y;
+        X:= tl X
+    }
+}
+write Y
